@@ -78,12 +78,14 @@ BuildRequires:		libjpeg-turbo-devel
 BuildRequires:		cmake
 %endif
 
-# wxWidgets BuildRequires
+# wxWidgets BuildRequires / Requires
 %if 0%{?fedora_version}
 BuildRequires:		wxGTK-devel
+Requires:		wxGTK-devel
 %endif
 %if 0%{?suse_version}
 BuildRequires:		wxWidgets-devel
+Requires:		wxWidgets-devel
 %endif
 
 # Qt5 BuildRequires for Fedora
