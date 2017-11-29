@@ -20,6 +20,7 @@
 #include <sys/socket.h>
 #include <unistd.h>
 #endif
+#include <stdint.h>
 
 #include "gr.h"
 
