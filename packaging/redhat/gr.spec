@@ -112,6 +112,8 @@ tar -C %{THIRDPARTY_SRC} -xf %{SOURCE10}
 tar -C %{THIRDPARTY_SRC} -xf %{SOURCE11}
 
 %build
+lib/Version --c
+git describe
 make -C 3rdparty GRDIR=%{grdir} DIR=`pwd`/%{THIRDPARTY}
 make -C 3rdparty extras GRDIR=%{grdir} DIR=`pwd`/%{THIRDPARTY}
 make GRDIR=%{grdir} \
